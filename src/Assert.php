@@ -28,6 +28,20 @@
 
 
 		/**
+		 * Checks if value is bool
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function bool($value, $msg = NULL)
+		{
+			self::assert(is_bool($value), self::message($msg, 'int', $value));
+		}
+
+
+		/**
 		 * Checks if value is integer
 		 * @param  mixed
 		 * @param  string|NULL

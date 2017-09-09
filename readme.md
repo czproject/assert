@@ -33,6 +33,7 @@ function add($a, $b)
 ```
 
 * `assert($value, $msg = NULL)` - checks if value is `TRUE`
+* `bool($value, $msg = NULL)` - checks if value is `bool`
 * `int($value, $msg = NULL)` - checks if value is `int`
 * `intOrNull($value, $msg = NULL)` - checks if value is `int|NULL`
 * `string($value, $msg = NULL)` - checks if value is `string`
