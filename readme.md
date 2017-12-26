@@ -1,6 +1,8 @@
 
 # CzProject\Assert
 
+[![Build Status](https://travis-ci.org/czproject/assert.svg?branch=v1.0.0)](https://travis-ci.org/czproject/assert)
+
 Assert helper, throws exceptions.
 
 
