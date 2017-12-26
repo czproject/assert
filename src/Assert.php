@@ -85,6 +85,21 @@
 
 
 		/**
+		 * Checks if value is object of given type or NULL
+		 * @param  mixed
+		 * @param  string
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function typeOrNull($value, $type, $msg = NULL)
+		{
+			self::assert(is_null($value) || ($value instanceof $type), self::message($msg, $type, $value));
+		}
+
+
+		/**
 		 * Checks if value is string
 		 * @param  mixed
 		 * @param  string|NULL

@@ -84,6 +84,18 @@ test(function () {
 
 test(function () {
 
+	Assert::typeOrNull(new \DateTime('UTC'), 'DateTime');
+	Assert::typeOrNull(NULL, 'DateTime');
+
+	Tester\Assert::exception(function () {
+		Assert::typeOrNull(new \DateTime('UTC'), 'AnotherDateTime');
+	}, 'CzProject\Assert\AssertException');
+
+});
+
+
+test(function () {
+
 	Assert::in(10, array(20, 15, 10, 5, 0));
 
 	Tester\Assert::exception(function () {
