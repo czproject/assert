@@ -28,6 +28,34 @@
 
 
 		/**
+		 * Checks if value is TRUE. Alias for self::assert()
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function true($value, $msg = NULL)
+		{
+			self::assert($value, $msg);
+		}
+
+
+		/**
+		 * Checks if value is FALSE.
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function false($value, $msg = NULL)
+		{
+			self::assert($value === FALSE, $msg);
+		}
+
+
+		/**
 		 * Checks if value is bool
 		 * @param  mixed
 		 * @param  string|NULL

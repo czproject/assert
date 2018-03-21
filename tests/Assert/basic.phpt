@@ -27,6 +27,28 @@ test(function () {
 
 test(function () {
 
+	Assert::true(TRUE);
+
+	Tester\Assert::exception(function () {
+		Assert::true(FALSE);
+	}, 'CzProject\Assert\AssertException');
+
+});
+
+
+test(function () {
+
+	Assert::false(FALSE);
+
+	Tester\Assert::exception(function () {
+		Assert::false(TRUE);
+	}, 'CzProject\Assert\AssertException');
+
+});
+
+
+test(function () {
+
 	Assert::int(1000);
 
 	Tester\Assert::exception(function () {
