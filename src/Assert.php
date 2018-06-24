@@ -65,7 +65,7 @@
 		 */
 		public static function bool($value, $msg = NULL)
 		{
-			self::assert(is_bool($value), self::message($msg, 'int', $value));
+			self::assert(is_bool($value), self::message($msg, 'bool', $value));
 		}
 
 

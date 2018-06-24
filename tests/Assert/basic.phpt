@@ -49,6 +49,18 @@ test(function () {
 
 test(function () {
 
+	Assert::bool(FALSE);
+	Assert::bool(TRUE);
+
+	Tester\Assert::exception(function () {
+		Assert::bool(1);
+	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected bool, integer given.');
+
+});
+
+
+test(function () {
+
 	Assert::int(1000);
 
 	Tester\Assert::exception(function () {
