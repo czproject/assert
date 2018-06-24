@@ -185,6 +185,21 @@
 
 
 		/**
+		 * Checks if value is in haystack. Alias for Assert::in()
+		 * @param  mixed
+		 * @param  array
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function inArray($value, array $haystack, $msg = NULL)
+		{
+			self::in($value, $haystack, $msg);
+		}
+
+
+		/**
 		 * @param  string|NULL
 		 * @param  string
 		 * @param  mixed

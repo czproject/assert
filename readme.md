@@ -46,6 +46,7 @@ function add($a, $b)
 * `typeOrNull($value, $type, $msg = NULL)` - checks if value is instance of given type or `NULL`
 * `null($value, $msg = NULL)` - checks if value is `NULL`
 * `in($value, $arr, $msg = NULL)` - checks if value is in array
+* `inArray($value, $arr, $msg = NULL)` - alias for `Assert::in()`
 
 ------------------------------
 
