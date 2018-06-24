@@ -51,7 +51,7 @@
 		 */
 		public static function false($value, $msg = NULL)
 		{
-			self::assert($value === FALSE, $msg);
+			self::assert($value === FALSE, self::message($msg, 'FALSE', $value));
 		}
 
 
@@ -137,7 +137,7 @@
 		 */
 		public static function typeOrNull($value, $type, $msg = NULL)
 		{
-			self::assert(is_null($value) || ($value instanceof $type), self::message($msg, $type, $value));
+			self::assert(is_null($value) || ($value instanceof $type), self::message($msg, $type . '|NULL', $value));
 		}
 
 
