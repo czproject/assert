@@ -24,8 +24,6 @@ composer require czproject/assert
 
 
 ``` php
-<?php
-
 use CzProject\Assert\Assert;
 
 function add($a, $b)
