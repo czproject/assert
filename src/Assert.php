@@ -112,6 +112,34 @@
 
 
 		/**
+		 * Checks if value is float
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function float($value, $msg = NULL)
+		{
+			self::assert(is_float($value), self::message($msg, 'float', $value));
+		}
+
+
+		/**
+		 * Checks if value is float or NULL
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function floatOrNull($value, $msg = NULL)
+		{
+			self::assert($value === NULL || is_float($value), self::message($msg, 'float|NULL', $value));
+		}
+
+
+		/**
 		 * Checks if value is object of given type
 		 * @param  mixed
 		 * @param  string

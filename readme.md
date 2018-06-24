@@ -40,6 +40,8 @@ function add($a, $b)
 * `bool($value, $msg = NULL)` - checks if value is `bool`
 * `int($value, $msg = NULL)` - checks if value is `int`
 * `intOrNull($value, $msg = NULL)` - checks if value is `int|NULL`
+* `float($value, $msg = NULL)` - checks if value is `float`
+* `floatOrNull($value, $msg = NULL)` - checks if value is `float|NULL`
 * `string($value, $msg = NULL)` - checks if value is `string`
 * `stringOrNull($value, $msg = NULL)` - checks if value is `string|NULL`
 * `type($value, $type, $msg = NULL)` - checks if value is instance of given type

@@ -95,6 +95,29 @@ test(function () {
 
 test(function () {
 
+	Assert::float(1000.0);
+
+	Tester\Assert::exception(function () {
+		Assert::float('1000');
+	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected float, string given.');
+
+});
+
+
+test(function () {
+
+	Assert::floatOrNull(1000.0);
+	Assert::floatOrNull(NULL);
+
+	Tester\Assert::exception(function () {
+		Assert::floatOrNull('1000');
+	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected float|NULL, string given.');
+
+});
+
+
+test(function () {
+
 	Assert::string('1000');
 
 	Tester\Assert::exception(function () {
