@@ -61,6 +61,17 @@ test(function () {
 
 test(function () {
 
+	Assert::null(NULL);
+
+	Tester\Assert::exception(function () {
+		Assert::null(1);
+	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected NULL, integer given.');
+
+});
+
+
+test(function () {
+
 	Assert::int(1000);
 
 	Tester\Assert::exception(function () {

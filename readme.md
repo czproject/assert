@@ -44,6 +44,7 @@ function add($a, $b)
 * `stringOrNull($value, $msg = NULL)` - checks if value is `string|NULL`
 * `type($value, $type, $msg = NULL)` - checks if value is instance of given type
 * `typeOrNull($value, $type, $msg = NULL)` - checks if value is instance of given type or `NULL`
+* `null($value, $msg = NULL)` - checks if value is `NULL`
 * `in($value, $arr, $msg = NULL)` - checks if value is in array
 
 ------------------------------

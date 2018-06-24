@@ -70,6 +70,20 @@
 
 
 		/**
+		 * Checks if value is NULL
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function null($value, $msg = NULL)
+		{
+			self::assert(is_null($value), self::message($msg, 'NULL', $value));
+		}
+
+
+		/**
 		 * Checks if value is integer
 		 * @param  mixed
 		 * @param  string|NULL
