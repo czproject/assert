@@ -140,6 +140,34 @@
 
 
 		/**
+		 * Checks if value is float or int.
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function number($value, $msg = NULL)
+		{
+			self::assert(is_float($value) || is_int($value), self::message($msg, 'float|int', $value));
+		}
+
+
+		/**
+		 * Checks if value is float or int or NULL
+		 * @param  mixed
+		 * @param  string|NULL
+		 * @return void
+		 * @throws AssertException
+		 * @tracySkipLocation
+		 */
+		public static function numberOrNull($value, $msg = NULL)
+		{
+			self::assert($value === NULL || is_float($value) || is_int($value), self::message($msg, 'float|int|NULL', $value));
+		}
+
+
+		/**
 		 * Checks if value is object of given type
 		 * @param  mixed
 		 * @param  string

@@ -118,6 +118,31 @@ test(function () {
 
 test(function () {
 
+	Assert::number(1000.0);
+	Assert::number(1000);
+
+	Tester\Assert::exception(function () {
+		Assert::number('1000');
+	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected float|int, string given.');
+
+});
+
+
+test(function () {
+
+	Assert::numberOrNull(1000.0);
+	Assert::numberOrNull(1000);
+	Assert::numberOrNull(NULL);
+
+	Tester\Assert::exception(function () {
+		Assert::numberOrNull('1000');
+	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected float|int|NULL, string given.');
+
+});
+
+
+test(function () {
+
 	Assert::string('1000');
 
 	Tester\Assert::exception(function () {
