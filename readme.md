@@ -1,7 +1,7 @@
 
 # CzProject\Assert
 
-[![Build Status](https://travis-ci.org/czproject/assert.svg?branch=v1.0.0)](https://travis-ci.org/czproject/assert)
+[![Tests Status](https://github.com/czproject/assert/workflows/Tests/badge.svg)](https://github.com/czproject/assert/actions)
 
 Assert helper, throws exceptions.
 
