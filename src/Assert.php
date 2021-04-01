@@ -13,8 +13,8 @@
 
 		/**
 		 * Checks if value is TRUE.
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -29,8 +29,8 @@
 
 		/**
 		 * Checks if value is TRUE. Alias for self::assert()
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -43,8 +43,8 @@
 
 		/**
 		 * Checks if value is FALSE.
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -57,8 +57,8 @@
 
 		/**
 		 * Checks if value is bool
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -71,8 +71,8 @@
 
 		/**
 		 * Checks if value is NULL
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -85,8 +85,8 @@
 
 		/**
 		 * Checks if value is integer
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -99,8 +99,8 @@
 
 		/**
 		 * Checks if value is integer or NULL
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -113,8 +113,8 @@
 
 		/**
 		 * Checks if value is float
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -127,8 +127,8 @@
 
 		/**
 		 * Checks if value is float or NULL
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -141,8 +141,8 @@
 
 		/**
 		 * Checks if value is float or int.
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -155,8 +155,8 @@
 
 		/**
 		 * Checks if value is float or int or NULL
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -169,9 +169,9 @@
 
 		/**
 		 * Checks if value is object of given type
-		 * @param  mixed
-		 * @param  string
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string $type
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -184,9 +184,9 @@
 
 		/**
 		 * Checks if value is object of given type or NULL
-		 * @param  mixed
-		 * @param  string
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string $type
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -199,8 +199,8 @@
 
 		/**
 		 * Checks if value is string
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -213,8 +213,8 @@
 
 		/**
 		 * Checks if value is string or NULL
-		 * @param  mixed
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -227,9 +227,9 @@
 
 		/**
 		 * Checks if value is in haystack
-		 * @param  mixed
-		 * @param  array
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  array<mixed> $haystack
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -242,9 +242,9 @@
 
 		/**
 		 * Checks if value is in haystack. Alias for Assert::in()
-		 * @param  mixed
-		 * @param  array
-		 * @param  string|NULL
+		 * @param  mixed $value
+		 * @param  array<mixed> $haystack
+		 * @param  string|NULL $msg
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
@@ -256,9 +256,9 @@
 
 
 		/**
-		 * @param  string|NULL
-		 * @param  string
-		 * @param  mixed
+		 * @param  string|NULL $msg
+		 * @param  string $expected
+		 * @param  mixed $value
 		 * @return string
 		 */
 		private static function message($msg, $expected, $value)
