@@ -17,5 +17,12 @@
 	},
 	"require-dev": {
 		"nette/tester": "^2.0"
+	},
+	"extra": {
+		"phpstan": {
+			"includes": [
+				"src/Bridges/PhpStan/extension.neon"
+			]
+		}
 	}
 }

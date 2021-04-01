@@ -1,0 +1,5 @@
+services:
+	-
+		class: CzProject\Assert\Bridges\PhpStan\StaticMethodTypeSpecifyingExtension
+		tags:
+			- phpstan.typeSpecifier.staticMethodTypeSpecifyingExtension
