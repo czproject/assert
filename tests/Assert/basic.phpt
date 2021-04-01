@@ -189,10 +189,10 @@ test(function () {
 
 test(function () {
 
-	Assert::in(10, array(20, 15, 10, 5, 0));
+	Assert::in(10, [20, 15, 10, 5, 0]);
 
 	Tester\Assert::exception(function () {
-		Assert::in('10', array(20, 15, 10, 5, 0));
+		Assert::in('10', [20, 15, 10, 5, 0]);
 	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected value from specific range, string given.');
 
 });
@@ -200,10 +200,10 @@ test(function () {
 
 test(function () {
 
-	Assert::inArray(10, array(20, 15, 10, 5, 0));
+	Assert::inArray(10, [20, 15, 10, 5, 0]);
 
 	Tester\Assert::exception(function () {
-		Assert::inArray('10', array(20, 15, 10, 5, 0));
+		Assert::inArray('10', [20, 15, 10, 5, 0]);
 	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected value from specific range, string given.');
 
 });

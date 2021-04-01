@@ -86,11 +86,11 @@ test(function () {
 test(function () {
 
 	Tester\Assert::exception(function () {
-		Assert::in('10', array(20, 15, 10, 5, 0));
+		Assert::in('10', [20, 15, 10, 5, 0]);
 	}, 'CzProject\Assert\AssertException', 'Invalid value type - expected value from specific range, string given.');
 
 	Tester\Assert::exception(function () {
-		Assert::in('10', array(20, 15, 10, 5, 0), 'Custom message.');
+		Assert::in('10', [20, 15, 10, 5, 0], 'Custom message.');
 	}, 'CzProject\Assert\AssertException', 'Custom message.');
 
 });
