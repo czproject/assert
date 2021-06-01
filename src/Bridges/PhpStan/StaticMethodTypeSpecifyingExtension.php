@@ -242,7 +242,7 @@
 					},
 					'in' => function (Scope $scope, Arg $value, Arg $haystack): \PhpParser\Node\Expr {
 						return new \PhpParser\Node\Expr\FuncCall(
-							new \PhpParser\Node\Name('is_array'),
+							new \PhpParser\Node\Name('in_array'),
 							[$value, $haystack, new Arg(new \PhpParser\Node\Expr\ConstFetch(new \PhpParser\Node\Name('true')))]
 						);
 					},
