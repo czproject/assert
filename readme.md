@@ -50,6 +50,17 @@ function add($a, $b)
 * `in($value, $arr, $msg = NULL)` - checks if value is in array
 * `inArray($value, $arr, $msg = NULL)` - alias for `Assert::in()`
 
+
+## PhpStan extension
+
+```neon
+services:
+	-
+		class: CzProject\Assert\Bridges\PhpStan\StaticMethodTypeSpecifyingExtension
+		tags:
+			- phpstan.typeSpecifier.staticMethodTypeSpecifyingExtension
+```
+
 ------------------------------
 
 License: [New BSD License](license.md)
