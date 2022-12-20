@@ -80,7 +80,7 @@
 		/**
 		 * @param Scope $scope
 		 * @param string $name
-		 * @param \PhpParser\Node\Arg[] $args
+		 * @param array<\PhpParser\Node\Arg|\PhpParser\Node\VariadicPlaceholder> $args
 		 * @return \PhpParser\Node\Expr|NULL
 		 */
 		private static function createExpression(
