@@ -1,11 +1,13 @@
-
 # CzProject\Assert
 
-[![Tests Status](https://github.com/czproject/assert/workflows/Tests/badge.svg)](https://github.com/czproject/assert/actions)
+[![Build Status](https://github.com/czproject/assert/workflows/Build/badge.svg)](https://github.com/czproject/assert/actions)
+[![Downloads this Month](https://img.shields.io/packagist/dm/czproject/assert.svg)](https://packagist.org/packages/czproject/assert)
+[![Latest Stable Version](https://poser.pugx.org/czproject/assert/v/stable)](https://github.com/czproject/assert/releases)
+[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg)](https://github.com/czproject/assert/blob/master/license.md)
 
 Assert helper, throws exceptions.
 
-<a href="https://www.paypal.me/janpecha/5eur"><img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35"></a>
+<a href="https://www.janpecha.cz/donate/"><img src="https://buymecoffee.intm.org/img/donate-banner.v1.svg" alt="Donate" height="100"></a>
 
 
 ## Installation
