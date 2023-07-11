@@ -12,6 +12,9 @@
 	use PHPStan\Type\Constant\ConstantStringType;
 
 
+	/**
+	 * @deprecated CzProject\Assert uses @phpstan-assert PHPDoc tags (supported since PHPStan 1.9.0)
+	 */
 	class StaticMethodTypeSpecifyingExtension implements \PHPStan\Type\StaticMethodTypeSpecifyingExtension, \PHPStan\Analyser\TypeSpecifierAwareExtension
 	{
 		/** @var \Closure[] */

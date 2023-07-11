@@ -18,6 +18,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert TRUE $value
 		 */
 		public static function assert($value, $msg = NULL)
 		{
@@ -34,6 +35,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert TRUE $value
 		 */
 		public static function true($value, $msg = NULL)
 		{
@@ -48,6 +50,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert FALSE $value
 		 */
 		public static function false($value, $msg = NULL)
 		{
@@ -62,6 +65,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert bool $value
 		 */
 		public static function bool($value, $msg = NULL)
 		{
@@ -76,6 +80,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert NULL $value
 		 */
 		public static function null($value, $msg = NULL)
 		{
@@ -90,6 +95,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert int $value
 		 */
 		public static function int($value, $msg = NULL)
 		{
@@ -104,6 +110,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert int|NULL $value
 		 */
 		public static function intOrNull($value, $msg = NULL)
 		{
@@ -118,6 +125,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert float $value
 		 */
 		public static function float($value, $msg = NULL)
 		{
@@ -132,6 +140,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert float|NULL $value
 		 */
 		public static function floatOrNull($value, $msg = NULL)
 		{
@@ -146,6 +155,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert float|int $value
 		 */
 		public static function number($value, $msg = NULL)
 		{
@@ -160,6 +170,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert float|int|NULL $value
 		 */
 		public static function numberOrNull($value, $msg = NULL)
 		{
@@ -175,6 +186,9 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-template T of object
+		 * @phpstan-param class-string<T> $type
+		 * @phpstan-assert T $value
 		 */
 		public static function type($value, $type, $msg = NULL)
 		{
@@ -190,6 +204,9 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-template T of object
+		 * @phpstan-param class-string<T> $type
+		 * @phpstan-assert T|NULL $value
 		 */
 		public static function typeOrNull($value, $type, $msg = NULL)
 		{
@@ -204,6 +221,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert string $value
 		 */
 		public static function string($value, $msg = NULL)
 		{
@@ -218,6 +236,7 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-assert string|NULL $value
 		 */
 		public static function stringOrNull($value, $msg = NULL)
 		{
@@ -233,6 +252,9 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-template T
+		 * @phpstan-param T[] $haystack
+		 * @phpstan-assert value-of<T> $value
 		 */
 		public static function in($value, array $haystack, $msg = NULL)
 		{
@@ -248,6 +270,9 @@
 		 * @return void
 		 * @throws AssertException
 		 * @tracySkipLocation
+		 * @phpstan-template T
+		 * @phpstan-param T[] $haystack
+		 * @phpstan-assert value-of<T> $value
 		 */
 		public static function inArray($value, array $haystack, $msg = NULL)
 		{
