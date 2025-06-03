@@ -1,5 +1,7 @@
 <?php
 
+	declare(strict_types=1);
+
 	namespace CzProject\Assert\Bridges\PhpStan;
 
 	use PhpParser\Node\Arg;
