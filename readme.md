@@ -18,7 +18,7 @@ Assert helper, throws exceptions.
 composer require czproject/assert
 ```
 
-`CzProject\Assert` requires PHP 5.6 or later.
+`CzProject\Assert` requires PHP 8.0 or later.
 
 
 ## Usage
