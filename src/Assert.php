@@ -256,7 +256,7 @@
 		 * @tracySkipLocation
 		 * @phpstan-template T
 		 * @phpstan-param T[] $haystack
-		 * @phpstan-assert value-of<T> $value
+		 * @phpstan-assert value-of<T[]> $value
 		 */
 		public static function in($value, array $haystack, $msg = NULL)
 		{
@@ -274,7 +274,7 @@
 		 * @tracySkipLocation
 		 * @phpstan-template T
 		 * @phpstan-param T[] $haystack
-		 * @phpstan-assert value-of<T> $value
+		 * @phpstan-assert value-of<T[]> $value
 		 */
 		public static function inArray($value, array $haystack, $msg = NULL)
 		{
